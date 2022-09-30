@@ -99,6 +99,96 @@
                   </use>
                 </svg>
               </button>
+              <form class="form">
+                <h2 class="form-title">
+                  Залиште свої дані, ми вам передзвонимо
+                </h2>
+
+                <div class="form-field">
+                  <label class="register-field" for="name">
+                    <p class="register-text">Імʼя</p>
+                    <input
+                      class="register-form-input"
+                      type="text"
+                      name="username"
+                      id="name"
+                    />
+                    <svg class="register-form-icon" width="12" height="12">
+                      <use href="./images/icons.svg#person-icon"></use>
+                    </svg>
+                  </label>
+                </div>
+
+                <div class="form-field">
+                  <label for="tel">
+                    <p class="register-text">Телефон</p>
+                    <input
+                      class="register-form-input"
+                      type="tel"
+                      name="tel"
+                      id="tel"
+                    />
+
+                    <svg class="register-form-icon" width="13" height="13">
+                      <use href="./images/icons.svg#phone-icon"></use>
+                    </svg>
+                  </label>
+                </div>
+
+                <div class="form-field">
+                  <label for="mail">
+                    <p class="register-text">Пошта</p>
+                    <input
+                      class="register-form-input"
+                      type="email"
+                      name="mail"
+                      id="mail"
+                    />
+
+                    <svg class="register-form-icon" width="15" height="12">
+                      <use href="./images/icons.svg#email-icon"></use>
+                    </svg>
+                  </label>
+                </div>
+
+                <div class="form-field">
+                  <label for="comment">
+                    <p class="register-text">Коментар</p>
+                    <textarea
+                      class="comment"
+                      name="comment"
+                      rows="5"
+                      id="comment"
+                      placeholder="Введіть текст"
+                    ></textarea>
+                  </label>
+                </div>
+
+                <label class="policy" for="policy">
+                  <input
+                    class="register-form-checkbox is-hidden"
+                    type="checkbox"
+                    name="policy"
+                    value=""
+                    id="policy"
+                  />
+                  <svg width="16" height="15">
+                    <use
+                      class="icon-checked"
+                      href="./images/symbol-defs.svg#checked-icon"
+                    ></use>
+                    <use class="icon-unchecked" href=""></use>
+                  </svg>
+                  Погоджуюся з розсилкою та приймаю<a
+                    class="policy-link"
+                    href=""
+                  >
+                    Умови договору</a
+                  >
+                </label>
+
+                <button class="form-button" type="submit">Відправити</button>
+              </form>
             </div>
           </div>
         </div>
@@ -1267,6 +1357,28 @@
               </a>
             </li>
           </ul>
+        </div>
+
+        <div class="footer-policy">
+          <h3 class="footer-policy-title">Підпишіться на розсилку</h3>
+          <div class="footer-policy-box">
+            <label for="email">
+              <input type="email" id="email" placeholder="E-mail" />
+
+              <button class="footer-button" type="submit">
+                <p>Підписатися</p>
+                <svg class="icon-send" width="24" height="24">
+                  <use href="./images/icons.svg#icon-send">
+                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M24 0L0 13.5L7.66994 16.3407L19.5 5.25002L10.5017 17.3896L10.509 17.3923L10.5 17.3896V24.0001L14.8013 18.982L20.2501 21.0001L24 0Z"
+                      />
+                    </svg>
+                  </use>
+                </svg>
+              </button>
+            </label>
+          </div>
         </div>
       </div>
     </footer>
