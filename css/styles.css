@@ -463,6 +463,23 @@ section {
   color: var(--accent-color);
 }
 
+.icon-checked {
+  display: inline-block;
+  width: 16px;
+  height: 15px;
+
+  border: 2px solid var(--link-color);
+  border-radius: 2px;
+}
+
+.register-form-checkbox:checked + .icon-checked {
+  background-color: var(--accent-color);
+  background-image: url(../images/checked-icon.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+
+}
+
 .form-button {
   background: var(--accent-color);
   color: var(--main-background-color);
