@@ -447,6 +447,9 @@ section {
 }
 
 .policy {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   line-height: calc(24 / 14);
 }
 
@@ -463,21 +466,33 @@ section {
   color: var(--accent-color);
 }
 
+.register-form-checkbox {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+
+  position: absolute;
+}
+
 .icon-checked {
   display: inline-block;
   width: 16px;
   height: 15px;
+  margin-right: 8px;
 
   border: 2px solid var(--link-color);
   border-radius: 2px;
 }
 
 .register-form-checkbox:checked + .icon-checked {
+  border-color: var(--accent-color);
   background-color: var(--accent-color);
-  background-image: url(../images/checked-icon.svg);
-  background-size: cover;
-  background-repeat: no-repeat;
+  background-image: url(../images/checked.svg);
+  background-size: contain;
+  background-position: center;
+  background-origin: border-box;
 
+  transition: border 250ms var(--timing-function);
 }
 
 .form-button {
