@@ -100,9 +100,9 @@
                 </svg>
               </button>
               <form class="form">
-                <h2 class="form-title">
+                <p class="form-title">
                   Залиште свої дані, ми вам передзвонимо
-                </h2>
+                </p>
 
                 <div class="form-field">
                   <label class="register-field" for="name">
@@ -112,6 +112,7 @@
                       type="text"
                       name="username"
                       id="name"
+                      required
                     />
                     <svg class="register-form-icon" width="12" height="12">
                       <use href="./images/icons.svg#person-icon"></use>
@@ -127,6 +128,7 @@
                       type="tel"
                       name="tel"
                       id="tel"
+                      required
                     />
 
                     <svg class="register-form-icon" width="13" height="13">
@@ -143,6 +145,7 @@
                       type="email"
                       name="mail"
                       id="mail"
+                      required
                     />
 
                     <svg class="register-form-icon" width="15" height="12">
@@ -151,7 +154,7 @@
                   </label>
                 </div>
 
-                <div class="form-field">
+                <div class="form-field comment-field">
                   <label for="comment">
                     <p class="register-text">Коментар</p>
                     <textarea
@@ -171,6 +174,7 @@
                     name="policy"
                     value=""
                     id="policy"
+                    required
                   />
                   <span class="icon-checked"></span>
 
@@ -1354,7 +1358,7 @@
 
         <div class="footer-policy">
           <h3 class="footer-policy-title">Підпишіться на розсилку</h3>
-          <div class="footer-policy-box">
+          <form class="footer-policy-box">
             <label for="email">
               <input type="email" id="email" placeholder="E-mail" />
 
@@ -1371,7 +1375,7 @@
                 </svg>
               </button>
             </label>
-          </div>
+          </form>
         </div>
       </div>
     </footer>
