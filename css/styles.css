@@ -83,13 +83,13 @@ section {
   align-items: center;
 }
 
-.header-container {
+.header__container {
   display: flex;
   align-items: center;
 }
 
 /*Logo*/
-.logo {
+.header__logo {
   font-family: "Raleway";
   font-size: 26px;
   line-height: 1.2;
@@ -97,7 +97,7 @@ section {
   text-decoration: none;
 }
 
-.logo span {
+.header__logo span {
   color: var(--accent-color);
 }
 
@@ -195,7 +195,7 @@ section {
   margin-left: 50px;
 }
 
-.address-link {
+.address__link {
   font-style: normal;
   color: var(--primary-text-color);
   text-decoration: none;
@@ -211,8 +211,8 @@ section {
   transition-timing-function: var(--timing-function);
 }
 
-.address-link:hover,
-.address-link:focus {
+.address__link:hover,
+.address__link:focus {
   color: var(--accent-color);
 }
 
@@ -226,10 +226,6 @@ section {
 }
 
 /*Header*/
-.hero-container {
-  display: block;
-  align-items: center;
-}
 .hero {
   background-color: var(--hero-background-color);
   padding: 200px 0;
@@ -252,7 +248,7 @@ section {
   background-repeat: no-repeat;
 }
 
-.hero-title {
+.hero__title {
   text-align: center;
   color: var(--title-text-color);
   font-weight: 900;
@@ -357,7 +353,7 @@ section {
   padding: 40px;
 }
 
-.form-title {
+.form__title {
   font-weight: 700;
   font-size: 20px;
   line-height: 23px;
@@ -367,14 +363,14 @@ section {
   margin-bottom: 12px;
 }
 
-.form-field {
+.form__field {
   display: block;
   position: relative;
   flex-direction: column;
   margin-bottom: 10px;
 }
 
-.form-field label {
+.form__field label {
   margin-bottom: 4px;
   text-align: left;
 
@@ -386,7 +382,7 @@ section {
   color: var(--primary-text-color);
 }
 
-.form-field input {
+.form__field input {
   margin: 0;
   padding: 11px 12px;
   padding-left: 41px;
@@ -509,7 +505,7 @@ section {
   transition: border 250ms var(--timing-function);
 }
 
-.form-button {
+.form__button {
   background: var(--accent-color);
   color: var(--main-background-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -678,11 +674,11 @@ textarea:hover {
   background-color: var(--team-background-color);
 }
 
-.team-members {
+.team__members {
   display: flex;
 }
 
-.team-card {
+.team__card {
   margin-right: 30px;
   background-color: var(--main-background-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -690,17 +686,17 @@ textarea:hover {
   border-radius: 0px 0px 4px 4px;
 }
 
-.team-card:last-child {
+.team__card:last-child {
   margin-right: 0;
 }
 
-.team-member,
-.team-member-description {
+.team__description--name,
+.team__description--job {
   display: block;
   text-align: center;
 }
 
-.team-title {
+.team__title {
   color: var(--link-color);
   text-align: center;
   font-weight: 700;
@@ -740,26 +736,26 @@ textarea:hover {
   justify-content: center;
 }
 
-.socials-item {
+.socials__item {
   margin: 0;
 }
 
-.socials-icon {
+.socials__icon {
   fill: currentColor;
 }
 
-.socials-icon:hover .social,
-.socials-icon:focus .social {
+.socials__icon:hover .social,
+.socials__icon:focus .social {
   fill: var(--main-background-color);
 }
 
-.socials-link:hover,
-.socials-link:focus {
+.socials__link:hover,
+.socials__link:focus {
   background-color: var(--accent-color);
   color: var(--main-background-color);
 }
 
-.socials-link {
+.socials__link {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -831,6 +827,11 @@ textarea:hover {
   margin-right: 30px;
 }
 
+
+
+
+
+
 /*Footer*/
 .footer {
   background-color: var(--hero-background-color);
@@ -838,7 +839,7 @@ textarea:hover {
   padding-bottom: 60px;
 }
 
-.footer-logo {
+.footer__logo {
   font-family: "Raleway";
   font-size: 26px;
   line-height: 1.2;
@@ -846,7 +847,7 @@ textarea:hover {
   text-decoration: none;
 }
 
-.footer-logo span {
+.footer__logo span {
   color: var(--accent-color);
 }
 
@@ -868,7 +869,7 @@ textarea:hover {
   color: var(--accent-color);
 }
 
-.footer-address {
+.footer__address {
   font-style: normal;
   margin-top: 20px;
 }
@@ -909,6 +910,11 @@ textarea:hover {
 .social-footer:hover {
   background-color: var(--accent-color);
 }
+
+
+
+
+
 
 /*Buttons*/
 .button {
