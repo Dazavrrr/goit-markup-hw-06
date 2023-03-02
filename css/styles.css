@@ -1,16 +1,20 @@
 :root {
   --title-text-color: #ffffff;
   --primary-text-color: #757575;
-  --accent-color: #2196f3;
-  --btn-accent-color: #188ce8;
-  --logo-color: #000000;
-  --main-background-color: #ffffff;
-  --hero-background-color: #2f303a;
-  --link-color: #212121;
-  --team-background-color: #f5f4fa;
-  --button-background-color: #eeeeee;
+
+  --color-logo: #000000;
+  --color-link: #212121;
+  --color-icon: #afb1b8;
+  --color-accent: #2196f3;
+  --color-accent-btn: #188ce8;
+
+  --bg-color-main: #ffffff;
+  --bg-color-hero: #2f303a;
+  --bg-color-team: #f5f4fa;
+  --bg-color-button: #eeeeee;
+
   --header-shadow-line: #ececec;
-  --icon-color: #afb1b8;
+
   --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -26,7 +30,7 @@ html {
 
 body {
   font-family: "Roboto", "Raleway", "sans-serif";
-  background-color: var(--main-background-color);
+  background-color: var(--bg-color-main);
   font-size: 14px;
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
@@ -93,12 +97,12 @@ section {
   font-family: "Raleway";
   font-size: 26px;
   line-height: 1.2;
-  color: var(--logo-color);
+  color: var(--color-logo);
   text-decoration: none;
 }
 
 .header__logo span {
-  color: var(--accent-color);
+  color: var(--color-accent);
 }
 
 /*Navigation*/
@@ -133,14 +137,14 @@ section {
 
 .icon:hover,
 .icon:focus {
-  fill: var(--accent-color);
+  fill: var(--color-accent);
 }
 
 .nav-link {
   display: block;
   padding-top: 32px;
   padding-bottom: 32px;
-  color: var(--link-color);
+  color: var(--color-link);
   text-decoration: none;
   font-size: 14px;
   font-weight: 500;
@@ -154,11 +158,11 @@ section {
 
 .nav-link:hover,
 .nav-link:focus {
-  color: var(--accent-color);
+  color: var(--color-accent);
 }
 
 .current {
-  color: var(--accent-color);
+  color: var(--color-accent);
 }
 
 .nav-link-active {
@@ -167,7 +171,7 @@ section {
   padding-top: 32px;
   padding-bottom: 32px;
   text-decoration: none;
-  color: var(--accent-color);
+  color: var(--color-accent);
   cursor: pointer;
 }
 
@@ -179,7 +183,7 @@ section {
   border-radius: 2px;
   width: 100%;
   height: 4px;
-  background-color: var(--accent-color);
+  background-color: var(--color-accent);
   content: "";
 }
 
@@ -213,7 +217,7 @@ section {
 
 .address__link:hover,
 .address__link:focus {
-  color: var(--accent-color);
+  color: var(--color-accent);
 }
 
 .address::before a {
@@ -227,7 +231,7 @@ section {
 
 /*Header*/
 .hero {
-  background-color: var(--hero-background-color);
+  background-color: var(--bg-color-hero);
   padding: 200px 0;
   text-align: center;
 }
@@ -262,7 +266,7 @@ section {
 }
 
 .btn {
-  background-color: var(--accent-color);
+  background-color: var(--color-accent);
   color: var(--title-text-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 
@@ -284,12 +288,12 @@ section {
   cursor: pointer;
   font-family: inherit;
   border-radius: 4px;
-  border: var(--accent-color);
+  border: var(--color-accent);
 }
 
 .btn:hover,
 .btn:focus {
-  background-color: var(--btn-accent-color);
+  background-color: var(--color-accent-btn);
 }
 
 .backdrop {
@@ -317,7 +321,7 @@ section {
   left: 50%;
   width: 528px;
   height: 581px;
-  background: var(--main-background-color);
+  background: var(--bg-color-main);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
@@ -332,8 +336,8 @@ section {
   height: 30px;
   align-items: center;
   justify-content: center;
-  color: var(--logo-color);
-  background-color: var(--main-background-color);
+  color: var(--color-logo);
+  background-color: var(--bg-color-main);
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
   cursor: pointer;
@@ -341,7 +345,7 @@ section {
 
 .modal-button:hover,
 .modal-button:focus {
-  fill: var(--accent-color);
+  fill: var(--color-accent);
   transition-duration: 250ms;
   transition-timing-function: var(--timing-function);
 }
@@ -358,7 +362,7 @@ section {
   font-size: 20px;
   line-height: 23px;
   letter-spacing: 0.03em;
-  color: var(--link-color);
+  color: var(--color-link);
 
   margin-bottom: 12px;
 }
@@ -392,7 +396,7 @@ section {
 }
 
 .register-field:hover {
-  border-color: var(--accent-color);
+  border-color: var(--color-accent);
   transition: var(--timing-function);
 }
 
@@ -405,7 +409,7 @@ section {
 }
 
 .register-form-input:focus {
-  border-color: var(--accent-color);
+  border-color: var(--color-accent);
   transition: border 250ms var(--timing-function);
 }
 
@@ -418,7 +422,7 @@ section {
 }
 
 .register-form-input:focus + .register-form-icon {
-  fill: var(--accent-color);
+  fill: var(--color-accent);
 }
 
 .register-text {
@@ -460,11 +464,11 @@ section {
 }
 
 .policy-text a {
-  color: var(--accent-color);
+  color: var(--color-accent);
 }
 
 .policy-link {
-  color: var(--accent-color);
+  color: var(--color-accent);
 }
 
 .register-form-checkbox {
@@ -490,13 +494,13 @@ section {
   height: 15px;
   margin-right: 8px;
 
-  border: 2px solid var(--link-color);
+  border: 2px solid var(--color-link);
   border-radius: 2px;
 }
 
 .register-form-checkbox:checked + .icon-checked {
-  border-color: var(--accent-color);
-  background-color: var(--accent-color);
+  border-color: var(--color-accent);
+  background-color: var(--color-accent);
   background-image: url(../images/checked.svg);
   background-size: contain;
   background-position: center;
@@ -506,8 +510,8 @@ section {
 }
 
 .form__button {
-  background: var(--accent-color);
-  color: var(--main-background-color);
+  background: var(--color-accent);
+  color: var(--bg-color-main);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 
   border-radius: 4px;
@@ -526,7 +530,7 @@ section {
 
 .form-button:hover,
 .form-button:focus {
-  background: var(--btn-accent-color);
+  background: var(--color-accent-btn);
   transition-duration: 250ms;
   transition-timing-function: var(--timing-function);
 }
@@ -540,7 +544,7 @@ textarea {
 }
 
 textarea:hover {
-  border-color: var(--accent-color);
+  border-color: var(--color-accent);
   transition: border 250ms var(--timing-function);
 }
 
@@ -573,7 +577,7 @@ textarea:hover {
   display: flex;
   width: 270px;
   height: 120px;
-  background-color: var(--team-background-color);
+  background-color: var(--bg-color-team);
   border-radius: 4px;
   margin-bottom: 30px;
   background-repeat: no-repeat;
@@ -602,7 +606,7 @@ textarea:hover {
   line-height: 1;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: var(--link-color);
+  color: var(--color-link);
   margin: 0;
   margin-bottom: 10px;
 }
@@ -649,7 +653,7 @@ textarea:hover {
   font-weight: 700;
   line-height: calc(16 / 14);
   text-transform: uppercase;
-  color: var(--main-background-color);
+  color: var(--bg-color-main);
   justify-content: center;
   align-items: center;
 }
@@ -659,7 +663,7 @@ textarea:hover {
 }
 
 .pictures-title {
-  color: var(--link-color);
+  color: var(--color-link);
   text-align: center;
   font-weight: 700;
   font-size: 36px;
@@ -671,7 +675,7 @@ textarea:hover {
 
 /*Team*/
 .team {
-  background-color: var(--team-background-color);
+  background-color: var(--bg-color-team);
 }
 
 .team__members {
@@ -680,7 +684,7 @@ textarea:hover {
 
 .team__card {
   margin-right: 30px;
-  background-color: var(--main-background-color);
+  background-color: var(--bg-color-main);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
@@ -690,6 +694,24 @@ textarea:hover {
   margin-right: 0;
 }
 
+.team__description--name {
+  color: var(--color-link);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.2;
+  letter-spacing: .03em;
+  margin-bottom: 10px;
+}
+
+.team__description--job {
+  color: var(--primary-text-color);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.2;
+  letter-spacing: .03em;
+  margin-bottom: 15px;
+  }
+
 .team__description--name,
 .team__description--job {
   display: block;
@@ -697,7 +719,7 @@ textarea:hover {
 }
 
 .team__title {
-  color: var(--link-color);
+  color: var(--color-link);
   text-align: center;
   font-weight: 700;
   font-size: 36px;
@@ -706,14 +728,14 @@ textarea:hover {
   letter-spacing: 0.03em;
 }
 
-.team-description {
+.team__description {
   padding-top: 30px;
   padding-bottom: 30px;
   text-align: center;
 }
 
 .team-member {
-  color: var(--link-color);
+  color: var(--color-link);
   font-weight: 500;
   font-size: 16px;
   line-height: 1.2;
@@ -746,13 +768,13 @@ textarea:hover {
 
 .socials__icon:hover .social,
 .socials__icon:focus .social {
-  fill: var(--main-background-color);
+  fill: var(--bg-color-main);
 }
 
 .socials__link:hover,
 .socials__link:focus {
-  background-color: var(--accent-color);
-  color: var(--main-background-color);
+  background-color: var(--color-accent);
+  color: var(--bg-color-main);
 }
 
 .socials__link {
@@ -762,7 +784,7 @@ textarea:hover {
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  color: var(--icon-color);
+  color: var(--color-icon);
 
   transition-property: background-color, color;
   transition-duration: 250ms;
@@ -770,12 +792,12 @@ textarea:hover {
 }
 
 .socials-icon-footer {
-  fill: var(--main-background-color);
+  fill: var(--bg-color-main);
 }
 
 /* Clients */
 .clients-title {
-  color: var(--link-color);
+  color: var(--color-link);
   text-align: center;
   font-weight: 700;
   font-size: 36px;
@@ -797,10 +819,10 @@ textarea:hover {
   justify-content: center;
   width: 100%;
   height: 100%;
-  background-color: var(--main-background-color);
+  background-color: var(--bg-color-main);
   border: 1px solid rgba(175, 177, 184, 1);
   border-radius: 4px;
-  color: var(--icon-color);
+  color: var(--color-icon);
 
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -808,13 +830,13 @@ textarea:hover {
 
 .link:hover,
 .link:focus {
-  color: var(--accent-color);
-  border-color: var(--accent-color);
+  color: var(--color-accent);
+  border-color: var(--color-accent);
 }
 
 .box:hover,
 .box:focus {
-  fill: var(--accent-color);
+  fill: var(--color-accent);
 }
 
 .client-icon {
@@ -834,7 +856,7 @@ textarea:hover {
 
 /*Footer*/
 .footer {
-  background-color: var(--hero-background-color);
+  background-color: var(--bg-color-hero);
   padding-top: 60px;
   padding-bottom: 60px;
 }
@@ -848,7 +870,7 @@ textarea:hover {
 }
 
 .footer__logo span {
-  color: var(--accent-color);
+  color: var(--color-accent);
 }
 
 .address-map a {
@@ -866,7 +888,7 @@ textarea:hover {
 
 .address-map:hover a,
 .address-map:focus a {
-  color: var(--accent-color);
+  color: var(--color-accent);
 }
 
 .footer__address {
@@ -881,7 +903,7 @@ textarea:hover {
   line-height: 16px;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: var(--main-background-color);
+  color: var(--bg-color-main);
 
   margin-top: 0;
   margin-bottom: 20px;
@@ -904,11 +926,11 @@ textarea:hover {
 }
 
 .social-footer {
-  fill: var(--main-background-color);
+  fill: var(--bg-color-main);
 }
 
 .social-footer:hover {
-  background-color: var(--accent-color);
+  background-color: var(--color-accent);
 }
 
 
@@ -918,8 +940,8 @@ textarea:hover {
 
 /*Buttons*/
 .button {
-  background-color: var(--team-background-color);
-  color: var(--logo-color);
+  background-color: var(--bg-color-team);
+  color: var(--color-logo);
   font-size: 16px;
   font-weight: 500;
   line-height: 1.6;
@@ -945,7 +967,7 @@ textarea:hover {
 
 .button:hover,
 .button:focus {
-  background-color: var(--accent-color);
+  background-color: var(--color-accent);
   color: var(--title-text-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
@@ -996,7 +1018,7 @@ textarea:hover {
 .project-overlay-text {
   margin-left: 24px;
   margin-right: 24px;
-  color: var(--main-background-color);
+  color: var(--bg-color-main);
   font-weight: 400;
   font-size: 18px;
   line-height: 28px;
@@ -1021,7 +1043,7 @@ textarea:hover {
   font-size: 18px;
   line-height: 2.2;
   letter-spacing: 0.06em;
-  color: var(--link-color);
+  color: var(--color-link);
   margin-bottom: 4px;
 }
 
@@ -1039,7 +1061,7 @@ textarea:hover {
 
 .project-text {
   padding: 20px 5px;
-  border: 1px solid var(--button-background-color);
+  border: 1px solid var(--bg-color-button);
 }
 
 .footer-policy {
@@ -1068,9 +1090,9 @@ textarea:hover {
   padding: 15px 16px;
 
   border: 1px solid var(--primary-text-color);
-  background-color: var(--hero-background-color);
+  background-color: var(--bg-color-hero);
   border-radius: 4px;
-  color: var(--main-background-color);
+  color: var(--bg-color-main);
 }
 
 .footer-button {
@@ -1080,8 +1102,8 @@ textarea:hover {
   height: 50px;
   padding: 10px 28px;
 
-  background: var(--accent-color);
-  color: var(--main-background-color);
+  background: var(--color-accent);
+  color: var(--bg-color-main);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
 
@@ -1096,7 +1118,7 @@ textarea:hover {
 
 .icon-send {
   position: absolute;
-  fill: var(--main-background-color);
+  fill: var(--bg-color-main);
   display: block;
   right: 28px;
   bottom: 14px;
@@ -1104,6 +1126,6 @@ textarea:hover {
 
 .footer-button:hover,
 .footer-button:focus {
-  background-color: var(--btn-accent-color);
+  background-color: var(--color-accent-btn);
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
